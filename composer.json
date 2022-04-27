@@ -1,6 +1,6 @@
 {
-    "name": "suiteresources/laravel-quickbooks-client",
-    "description": "SuiteResources Laravel Client for QuickBooks.",
+    "name": "spinen/laravel-quickbooks-client",
+    "description": "SuiteResources Laravel Client for QuickBooks (forked from Spinen).",
     "keywords": [
         "quickbooks",
         "client",
