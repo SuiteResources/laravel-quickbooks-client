@@ -1,19 +1,12 @@
 {
-    "name": "spinen/laravel-quickbooks-client",
-    "description": "SPINEN's Laravel Client for QuickBooks.",
+    "name": "suiteresources/laravel-quickbooks-client",
+    "description": "SuiteResources Laravel Client for QuickBooks.",
     "keywords": [
         "quickbooks",
         "client",
-        "laravel",
-        "spinen"
+        "laravel"
     ],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Jimmy Puckett",
-            "email": "jimmy.puckett@spinen.com"
-        }
-    ],
     "require": {
         "php": ">=7.2|^8.0.2",
         "quickbooks/v3-php-sdk": "^6.0"
@@ -26,19 +19,19 @@
     },
     "autoload": {
         "psr-4": {
-            "Spinen\\QuickBooks\\": "src/"
+            "SuiteResources\\QuickBooks\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spinen\\QuickBooks\\": "tests/"
+            "SuiteResources\\QuickBooks\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Spinen\\QuickBooks\\Providers\\ServiceProvider",
-                "Spinen\\QuickBooks\\Providers\\ClientServiceProvider"
+                "SuiteResources\\QuickBooks\\Providers\\ServiceProvider",
+                "SuiteResources\\QuickBooks\\Providers\\ClientServiceProvider"
             ]
         }
     },
