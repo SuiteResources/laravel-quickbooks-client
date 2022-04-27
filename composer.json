@@ -19,7 +19,7 @@
         "illuminate/database": "~5.5|~6|~7|~8|~9",
         "illuminate/http": "~5.5|~6|~7|~8|~9",
         "illuminate/routing": "~5.5|~6|~7|~8|~9",
-        "quickbooks/v3-php-sdk": "^6.0",
+        "quickbooks/v3-php-sdk": "^6.0"
     },
     "require-dev": {
         "mockery/mockery": "^1.3.1",
