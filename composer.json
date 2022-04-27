@@ -20,19 +20,19 @@
     },
     "autoload": {
         "psr-4": {
-            "SuiteResources\\QuickBooks\\": "src/"
+            "Spinen\\QuickBooks\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SuiteResources\\QuickBooks\\": "tests/"
+            "Spinen\\QuickBooks\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "SuiteResources\\QuickBooks\\Providers\\ServiceProvider",
-                "SuiteResources\\QuickBooks\\Providers\\ClientServiceProvider"
+                "Spinen\\QuickBooks\\Providers\\ServiceProvider",
+                "Spinen\\QuickBooks\\Providers\\ClientServiceProvider"
             ]
         }
     },
