@@ -57,8 +57,10 @@ class Controller extends LaravelController
     {
         $quickbooks->deleteToken();
 
-        $request->session()->flash('success', 'Disconnected from QuickBooks');
-
+        $request->session();
+        if ($request->hasSession()){
+            $request->flash('success', 'Disconnected from QuickBooks');
+        }
         return $redirector->back();
     }
 
@@ -82,8 +84,10 @@ class Controller extends LaravelController
         // TODO: Deal with exceptions
         $quickbooks->exchangeCodeForToken($request->get('code'), $request->get('realmId'));
 
-        $request->session()->flash('success', 'Connected to QuickBooks');
-
+        $request->session();
+        if ($request->hasSession()){
+            $request->flash('success', 'Connected to QuickBooks');
+        }
         return $redirector->intended($url_generator->route('quickbooks.connect'));
     }
 }
