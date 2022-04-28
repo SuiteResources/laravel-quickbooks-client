@@ -5,6 +5,7 @@ namespace Spinen\QuickBooks\Providers;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 use Spinen\QuickBooks\Client;
+use Illuminate\Support\Facades\Auth;
 
 /**
  * Class ClientServiceProvider
@@ -40,8 +41,8 @@ class ClientServiceProvider extends LaravelServiceProvider
     public function register()
     {
         $this->app->bind(Client::class, function (Application $app) {
-            $token = ($app->auth->user()->quickBooksToken)
-                ? : $app->auth->user()
+            $token = (Auth::user()->quickBooksToken)
+                ? : Auth::user()
                               ->quickBooksToken()
                               ->make();
 
